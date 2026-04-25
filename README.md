@@ -78,13 +78,12 @@ All three models — HAR-RV, Random Forest, and MLP — are outperformed by the 
 - **QLIKE asymmetry:** HAR's smoothed weekly and monthly components mean-revert slowly. In low-volatility regimes, they cause the model to systematically over-predict realized variance, which QLIKE penalizes disproportionately. Naïve persistence adapts in one step.
 - **Test regime:** The 2014–2018 test window was a prolonged low-volatility environment (with isolated spikes). This is precisely the regime where HAR's long-horizon components are a liability rather than an asset.
 - **Feature ceiling for ML models:** The Random Forest and MLP use the same three HAR components as their input. Without additional features, they cannot obtain information that the linear model doesn't already capture.
-                  QLIKE
-Model                  
-Naive          0.292132
-HAR-RV         0.402441
-Random Forest  0.477593
-MLP            0.389185
-
+| Model         | QLIKE    |
+|---------------|----------|
+| Naive         | 0.292132 |
+| HAR-RV        | 0.402441 |
+| MLP           | 0.389185 |
+| Random Forest | 0.477593 |
 
 ---
 
