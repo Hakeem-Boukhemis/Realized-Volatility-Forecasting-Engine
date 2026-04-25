@@ -79,7 +79,7 @@ All three models — HAR-RV, Random Forest, and MLP — are outperformed by the 
 - **Test regime:** The 2014–2018 test window was a prolonged low-volatility environment (with isolated spikes). This is precisely the regime where HAR's long-horizon components are a liability rather than an asset.
 - **Feature ceiling for ML models:** The Random Forest and MLP use the same three HAR components as their input. Without additional features, they cannot obtain information that the linear model doesn't already capture.
 
---
+
 | Model         | QLIKE    |
 |---------------|----------|
 | Naive         | 0.292132 |
